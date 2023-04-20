@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Sistemas</title>
+    <style>
+      .comparativa{
+        margin: 80px 70px 80px 70px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">OSI --- TCP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">OSI</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">TCP</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+              </div>
+        </nav>
+        <h1 class="text-center mt-4">OSI y TCP/IP</h1>
+        <div class="row mt-6">
+            <img src="./osiLogo.png" class="my-4 img-thumbnail" height="100px">
+            <div class="row">
+                <div class="col-12 p-3 text-center bg-warning-subtle border border-dark">OSI</div>
+            </div>
+            <div class="row">
+            <div class="col-6 p-3 text-center bg-info-subtle border border-dark">Concepto</div>
+            <div class="col-6 p-3 bg-danger-subtle border border-dark">Interconexión de Sistemas Abiertos o por sus siglas OSI es un modelo de referencia para los protocolos de la red (no es una arquitectura de red).​ </div>
+        </div>
+        <div class="row">
+            <div class="col-6 p-3 text-center bg-info-subtle border border-dark">Fundador</div>
+            <div class="col-6 p-3 text-center bg-danger-subtle border border-dark">La Organización Internacional de Normalización.</div>
+        </div>
+        <div class="row">
+            <div class="col-6 p-3 text-center bg-info-subtle border border-dark">Año de creación</div>
+            <div class="col-6 p-3 text-center bg-danger-subtle border border-dark">1980</div>
+        </div>
+        <div class="row">
+          <div class="col-6 p-3 text-center bg-info-subtle border border-dark">Capas</div>
+          <div class="col-6 p-3 bg-danger-subtle border border-dark">
+            <p>
+              • Capa de aplicación: Está directamente relacionada con el usuario. Incluye protocolos que utilizan las
+              aplicaciones para el intercambio de datos. Hay que tener en cuenta que el usuario interactúa con el programa
+              o aplicación, no con la capa de aplicación. Algunos de los protocolos son HTTP, IMAP, SMTP, Telnet o FTP.
+            </p>
+            <p>
+              • Capa de presentación: Su objetivo principal es realizar funciones de conversión y codificación de los datos
+              para asegurar que los datos transferidos desde la capa sesión puedan ser leídos y entendidos por el sistema
+              de la capa de aplicación. Algunos protocolos relacionados son jpeg, xls, gif, mov, etc.
+            </p>
+            <p>
+              • Capa de sesión: Facilita acceso a servicios y conexiones. Un ejemplo de esta capa es la conexión entre un
+              servidor y un cliente.
+            </p>
+            <p>
+              • Capa de transporte: Se encarga de realizar una comunicación segura y confiable desde el origen hasta el
+              destino. Para ello, utiliza controles de flujo y errores que eviten pérdidas de datos y garanticen la velocidad.
+            </p>
+            <p>
+              • Capa de red: Determina la mejor ruta de destino a través del uso de tablas de enrutamiento. Algunos
+              protocolos usados son IP, IGRP o RIP.
+            </p>
+            <p>
+              • Capa de enlace de datos: Su función principal es garantizar la transmisión entre dos dispositivos a través de
+              un enlace. También detecta y soluciona errores que puedan surgir en una comunicación.
+            </p>
+            <p>
+              • Capa física: Se trata de los medios físicos que realizan las transmisiones de datos (bits) en las comunicaciones
+              de una red.
+            </p>
+            <p>• Capa de presentación: Su objetivo principal es realizar funciones de conversión y codificación de los datos</p></div>
+      </div>
+        <div class="row mt-6">
+            <img src="./tcp-ip.png" class="my-4 img-thumbnail" height="100px">
+            <div class="row mt-6">
+                <div class="col-12 p-3 text-center bg-warning-subtle border border-dark">TCP/IP</div>
+            </div>
+        <div class="row">
+            <div class="col-6 p-3 text-center bg-info-subtle border border-dark">Concepto</div>
+            <div class="col-6 p-3 bg-danger-subtle border border-dark">Es un protocolo de enlace de datos que se usa en Internet para que los ordenadores y otros dispositivos envíen y reciban datos. TCP/IP son las siglas en inglés de Transmission Control Protocol/Internet Protocol (protocolo de control de transmisión/protocolo de Internet).</div>
+        </div>
+        <div class="row">
+          <div class="col-6 p-3 text-center bg-info-subtle border border-dark">Creador</div>
+          <div class="col-6 p-3 text-center bg-danger-subtle border border-dark">Vinton Cerf y Robert E. Kahn</div>
+      </div>
+      <div class="row">
+        <div class="col-6 p-3 text-center bg-info-subtle border border-dark">Año de creación</div>
+        <div class="col-6 p-3 text-center bg-danger-subtle border border-dark">1970</div>
+    </div>
+    <div class="row">
+      <div class="col-6 p-3 text-center bg-info-subtle border border-dark">Capas</div>
+      <div class="col-6 p-3 text-justify bg-danger-subtle border border-dark"><p>• Capa de acceso a la red: especifica la forma en la que los datos deben enrutarse, sea cual sea el tipo de red utilizado. </p>
+        <p>•Capa de Internet: es responsable de proporcionar el paquete de datos (datagrama).</p>
+        <p>• Capa de transporte: brinda los datos de enrutamiento, junto con los mecanismos que permiten conocer el estado de la transmisión. Comprende a los protocolos TCP y UDP.</p>
+        <p>• Capa de aplicación: incorpora aplicaciones de red estándar (Telnet, SMTP, FTP, etc.).</p></div>
+      </div>
+    </div>
+    <img src="./Tabla-OSI-TCPIP.JPG" class="comparativa" height="800px" width="1000px">
+</body>
+</html>
