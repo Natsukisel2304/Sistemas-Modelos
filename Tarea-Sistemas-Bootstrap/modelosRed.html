@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Sistemas</title>
+  <style>
+    .comparativa {
+      margin: 80px 70px 80px 70px;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+
+  <body style="background: lightblue">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1><strong>OSI_TCP</strong></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">
+                <h1><strong>Inicio</strong></h1>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ciberseguridad.html">
+                <h1><strong>Seguridad</strong></h1>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./modelosRed.html">
+                <h1><strong>OSI</strong></h1>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./modelosRed.html">
+                <h1><strong>TCP</strong></h1>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin del header -->
+
+
+    <!-- Tabla comparativa del modelo OSI y TCP/IP-->
+    <div class="container">
+      <div style="background-color: #abababdd;border: dotted rgb(160, 157, 157) ;">
+        <h1 class="text-center " style="text-shadow: 2px 2px 2px grey, 0 0 10px white,0 -1px rgb(185, 185, 185); ">
+          Comparacion de: <a href="#osi" style="text-decoration: none;">Modelo OSI</a> y <a href="#tcp"
+            style="text-decoration: none;">TCP/IP</a></h1>
+        <div class="row">
+          <div class="col text-center" style="text-decoration-line: underline;">
+            <h2><strong>Modelo OSI</strong></h2>
+            <div class="row">
+              <div class="col"><br>
+                <h3>Capas de host</h3>
+              </div>
+              <div class="col">
+                <h4><a href="#apl">Aplicación</a></h4><br>
+                <h4><a href="#present">Presentación</a></h4><br>
+                <h4><a href="#ses">Sesión</a></h4>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col"><br>
+                <h3>Capas de Medios</h3>
+              </div>
+              <div class="col">
+                <h4><a href="#trans">Transporte</a></h4><br>
+                <h4><a href="#re">Red</a></h4><br>
+                <h4><a href="#enl">Enlace de Datos</a></h4><br>
+                <h4><a href="#fi">Física</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="col text-center" style="text-decoration-line: underline;">
+            <h2><strong>TCP/IP</strong></h2>
+            <div class="row">
+              <div class="col">
+                <h3><strong>Modelo TCP/IP</strong></h3><br>
+                <div class="row">
+                  <div class="col">
+                    <h4>Aplicación</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4>Transporte</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4>Internet</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4>Acceso a la red</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h3><strong>Conjunto del protocolo TCP/ip</strong></h3>
+                <div class="row">
+                  <div class="col">
+                    <h4>HTTP,DNS,DHCP,FTP</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4>TCP,UDP</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4>IPv4,IPv6,ICMPv4,ICMPv6</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h4>PPP,retransmisión de tramas, Ethernet</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin de la primera tabla comparativa -->
+
+      <h1 class="text-center mt-4">OSI y TCP/IP</h1>
+      <!-- Info OSI -->
+      <div class="row mt-6">
+        <div class="col-12">
+        <img src="./osiLogo.png" class="col-7 rounded mx-auto d-block img-fluid">
+        </div>
+        <div class="row">
+          <div class="col-12 p-3 text-center bg-warning-subtle border border-dark">
+            <h2 data-bs-toggle="modal" data-bs-target="#exampleModal">Modelo OSI</h2>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Qué es el modelo OSI?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>El modelo OSI (Open Systems Interconnection) es un modelo de referencia para protocolos de comunicación de redes de computadoras.</p>
+                    <p>Este modelo se divide en siete capas, cada una de las cuales representa un conjunto de funciones de comunicación específicas. Las capas del modelo OSI son:</p>
+                    <ul>
+                      <li>Física</li>
+                      <li>Enlace de datos</li>
+                      <li>Red</li>
+                      <li>Transporte</li>
+                      <li>Sesión</li>
+                      <li>Presentación</li>
+                      <li>Aplicación</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- Fin Modal-->
+            
+
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 p-3 text-center bg-info-subtle border border-dark">
+            <h2>Concepto</h2>
+          </div>
+          <div class="col-6 p-3 bg-danger-subtle border border-dark">
+            <h4>Interconexión de Sistemas Abiertos o por sus siglas OSI es un modelo de referencia para los protocolos
+              de la red (no es una arquitectura de red).</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 p-3 text-center bg-info-subtle border border-dark">
+            <h2>Fundador</h2>
+          </div>
+          <div class="col-6 p-3 text-center bg-danger-subtle border border-dark">
+            <h4>La Organización Internacional de Normalización.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 p-3 text-center bg-info-subtle border border-dark">
+            <h2>Año de creación</h2>
+          </div>
+          <div class="col-6 p-3 text-center bg-danger-subtle border border-dark">
+            <h4>1980</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 p-3 text-center bg-info-subtle border border-dark">
+            <h2>Capas</h2>
+          </div>
+          <div class="col-6 p-3 bg-danger-subtle border border-dark">
+            <h4>
+              <p>
+                • Capa de aplicación: Está directamente relacionada con el usuario. Incluye protocolos que utilizan las
+                aplicaciones para el intercambio de datos. Hay que tener en cuenta que el usuario interactúa con el
+                programa
+                o aplicación, no con la capa de aplicación. Algunos de los protocolos son HTTP, IMAP, SMTP, Telnet o
+                FTP.
+              </p>
+              <p>
+                • Capa de presentación: Su objetivo principal es realizar funciones de conversión y codificación de los
+                datos
+                para asegurar que los datos transferidos desde la capa sesión puedan ser leídos y entendidos por el
+                sistema
+                de la capa de aplicación. Algunos protocolos relacionados son jpeg, xls, gif, mov, etc.
+              </p>
+              <p>
+                • Capa de sesión: Facilita acceso a servicios y conexiones. Un ejemplo de esta capa es la conexión entre
+                un
+                servidor y un cliente.
+              </p>
+              <p>
+                • Capa de transporte: Se encarga de realizar una comunicación segura y confiable desde el origen hasta
+                el
+                destino. Para ello, utiliza controles de flujo y errores que eviten pérdidas de datos y garanticen la
+                velocidad.
+              </p>
+              <p>
+                • Capa de red: Determina la mejor ruta de destino a través del uso de tablas de enrutamiento. Algunos
+                protocolos usados son IP, IGRP o RIP.
+              </p>
+              <p>
+                • Capa de enlace de datos: Su función principal es garantizar la transmisión entre dos dispositivos a
+                través de
+                un enlace. También detecta y soluciona errores que puedan surgir en una comunicación.
+              </p>
+              <p>
+                • Capa física: Se trata de los medios físicos que realizan las transmisiones de datos (bits) en las
+                comunicaciones
+                de una red.
+              </p>
+              <p>• Capa de presentación: Su objetivo principal es realizar funciones de conversión y codificación de los
+                datos</p>
+            </h4>
+          </div>
+        </div>
+
+        <!-- Info TCP/IP -->
+        <div class="row mt-6">
+        </div>
+          <img src="./tcp-ip.png" class="col-7 my-4 rounded mx-auto d-block img-fluid">
+          <div class="row mt-6">
+            <div class="col-12 p-3 text-center bg-warning-subtle border border-dark">
+              <h2>TCP/IP</h2>
+            </div>
+          <div class="row">
+            <div class="col-6 p-3 text-center bg-info-subtle border border-dark">
+              <h2>Concepto</h2>
+            </div>
+            <div class="col-6 p-3 bg-danger-subtle border border-dark">
+              <h4>Es un protocolo de enlace de datos que se usa en Internet para que los ordenadores y otros
+                dispositivos envíen y reciban datos. TCP/IP son las siglas en inglés de Transmission Control
+                Protocol/Internet Protocol (protocolo de control de transmisión/protocolo de Internet).</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 p-3 text-center bg-info-subtle border border-dark">
+              <h2>Creador</h2>
+            </div>
+            <div class="col-6 p-3 text-center bg-danger-subtle border border-dark">
+              <h4>Vinton Cerf y Robert E. Kahn</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 p-3 text-center bg-info-subtle border border-dark">
+              <h2>Año de creación</h2>
+            </div>
+            <div class="col-6 p-3 text-center bg-danger-subtle border border-dark">
+              <h4>1970</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 p-3 text-center bg-info-subtle border border-dark">
+              <h2>Capas</h2>
+            </div>
+            <div class="col-6 p-3 text-justify bg-danger-subtle border border-dark">
+              <h4>
+                <p>• Capa de acceso a la red: especifica la forma en la que los datos deben enrutarse, sea cual sea el
+                  tipo de red utilizado. </p>
+                <p>•Capa de Internet: es responsable de proporcionar el paquete de datos (datagrama).</p>
+                <p>• Capa de transporte: brinda los datos de enrutamiento, junto con los mecanismos que permiten conocer
+                  el estado de la transmisión. Comprende a los protocolos TCP y UDP.</p>
+                <p>• Capa de aplicación: incorpora aplicaciones de red estándar (Telnet, SMTP, FTP, etc.).</p>
+              </h4>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Tabla para el popup -->
+
+        <div class="row mt-6 p-3">
+          <img src="./osi-vs-tcpip.jpg" class="col-7 p-3 rounded mx-auto d-block img-fluid">
+          <div class="row mt-6">
+            <div class="col-6 p-3 text-center bg-warning-subtle border border-dark">
+              <h2>Capas según el modelo OSI</h2>
+            </div>
+            <div class="col-6 p-3 text-center bg-warning-subtle border border-dark">
+              <h2>Capas según el modelo TCP/IP</h2>
+            </div>
+          </div>
+          <div class="border border-dark">
+            <div class="row">
+              <div class="col-3 p-3 text-center bg-info-subtle border border-dark">
+                <h3>7</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle border border-dark">
+                <h3>Aplicación: Application</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-info-subtle"></div>
+              <div class="col-3 p-3 bg-danger-subtle"></div>
+            </div>
+            <div class="row">
+              <div class="col-3 p-3 text-center bg-info-subtle border border-dark">
+                <h3>6</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle border border-dark">
+                <h3>presentación: Presentation</h3>
+              </div>
+              <div class="col-3 p-3  text-center bg-info-subtle">
+                <h3>4</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle">
+                <h3>Aplicación: Process</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 p-3 text-center bg-info-subtle border border-dark">
+                <h3>5</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle border border-dark">
+                <h3>Sesión: Session</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-info-subtle"></div>
+              <div class="col-3 p-3 bg-danger-subtle"></div>
+            </div>
+            <div class="row">
+              <div class="col-3 p-3 text-center bg-info-subtle border border-dark">
+                <h3>4</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle border border-dark">
+                <h3>Transporte: Transport</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-info-subtle">
+                <h3>3</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle">
+                <h3>Transporte: Host-to-Host</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 p-3 text-center bg-info-subtle border border-dark">
+                <h3>3</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle border border-dark">
+                <h3>Red: Network</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-info-subtle">
+                <h3>2</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle">
+                <h3>Internet: Network</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 p-3 text-center bg-info-subtle border border-dark">
+                <h3>2</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle border border-dark">
+                <h3>Enlace de datos: Data Link</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-info-subtle">
+                <h3>1</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle">
+                <h3>Acceso al medio: Media</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3 p-3 text-center bg-info-subtle border border-dark">
+                <h3>1</h3>
+              </div>
+              <div class="col-3 p-3 text-center bg-danger-subtle border border-dark">
+                <h3>Física: Physical</h3>
+              </div>
+              <div class="col-3 p-3 row-cols-sm-2 text-center bg-info-subtle"></div>
+              <div class="col-3 p-3 row-cols-sm-2 bg-danger-subtle"></div>
+            </div>
+          </div>
+        </div>
+  </body>
+
+</html>
